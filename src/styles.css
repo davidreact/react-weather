@@ -1,0 +1,359 @@
+@import url("https://fonts.googleapis.com/css?family=Manrope:500|Righteous|Lobster&display=swap");
+
+body {
+  /* font-family: Lato; */
+  font-family: var(--fontBody);
+  font-size: 12px;
+  color: var(--colorBody);
+  background-color: var(--backgroundBody);
+}
+
+.title {
+  /* width: 400px; */
+  margin: auto;
+  margin-bottom: 20px;
+  text-align: center;
+  padding-top: 20px;
+  font-size: 3em;
+}
+
+.searchBox {
+  padding: 5px;
+  padding-left: 10px;
+  font-size: 1.3em;
+  border-radius: 5px;
+  font-family: var(--fontBody);
+}
+
+.results {
+  margin: 3px;
+  padding: 7px;
+  font-size: 1.1em;
+  background-color: rgb(63, 60, 60);
+  cursor: pointer;
+  border-radius: 5px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: left;
+  text-indent: 5%;
+}
+
+.results:hover {
+  background-color: rgb(77, 75, 75);
+}
+
+.dummyData {
+  padding-left: 10px;
+}
+
+.radioInput {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 15px;
+  align-items: center;
+  /* height: 20px; */
+}
+
+.radioButton {
+  height: 20px;
+  width: 30px;
+}
+
+.radioLabel {
+  font-size: 1.2em;
+}
+
+.inputBox {
+  margin: auto;
+  width: 300px;
+  text-align: center;
+}
+
+.app {
+  margin: auto;
+  min-height: 100vh;
+  max-width: 400px;
+  background-color: var(--backgroundApp);
+}
+
+.currentDetails {
+  /* display: flex; */
+  text-align: center;
+  max-width: 400px;
+  min-width: 100px;
+}
+
+.hourlyChart {
+  margin: auto;
+  text-align: center;
+  height: 300px;
+  margin: 10px;
+}
+
+.temp {
+  display: flex;
+  justify-content: center;
+  padding: 0px 2px;
+  width: 70px;
+  /* align-content: center */
+  align-items: baseline;
+}
+
+.temp .value {
+  padding-right: 4px;
+  font-size: 1.9em;
+  max-width: 55px;
+}
+
+.weather.bottom {
+  max-width: 80px;
+  margin: 2px;
+  background-color: var(--backgroundForecast);
+  background-size: 70px;
+  background-repeat: no-repeat;
+  background-position: top;
+  background-position-y: -5px;
+  padding-top: 60px;
+  box-sizing: border-box;
+  border-radius: 3px;
+  box-shadow: 1px 1px 10px 1px rgb(95, 95, 95);
+}
+
+.weather.top {
+  max-width: 350px;
+  padding: 0px 5px 1px 60px;
+  height: 65px;
+  /* margin: 5px; */
+  background-color: var(--backgroundForecast);
+  background-size: 80px;
+  background-repeat: no-repeat;
+  background-position: left;
+  background-position-y: -7px;
+  background-position-x: -7px;
+  padding-top: 1px;
+  box-sizing: border-box;
+  border-radius: 3px;
+  box-shadow: 1px 1px 10px 1px rgb(95, 95, 95);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  /* flex-wrap: wrap; */
+}
+
+.clickMe {
+  position: relative;
+  font-size: 0.7em;
+  color: black;
+  width: 30px;
+  /* width: 40px; */
+  /* left: 40%; */
+  bottom: -65px;
+  /* padding: 2px 10px; */
+  background-color: #dddcda;
+  text-align: center;
+  border-radius: 0px 5px 0px 0px;
+}
+
+.clickMe:hover {
+  background-color: rgb(172, 165, 165);
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
+    0 17px 50px 0 rgba(0, 0, 0, 0.19);
+  cursor: pointer;
+}
+
+.extendedLabel {
+  animation-name: fadeIn;
+  animation-duration: 2s;
+  animation-fill-mode: both;
+  max-width: 350px;
+  margin-top: -5px;
+  /* padding: 20px; */
+  /* margin: 5px; */
+  background-color: var(--backgroundExtendedLabel);
+  color: var(--colorExtendedLabel);
+  box-sizing: border-box;
+  border-radius: 3px;
+  box-shadow: 1px 1px 10px 1px rgb(95, 95, 95);
+  /* display: flex; */
+  align-items: center;
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.temperatureRange,
+.weatherOther {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  margin: 5px;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: var(--background);
+}
+
+.searchBox {
+  margin: auto;
+}
+
+.day {
+  text-align: center;
+  color: var(--fontColor);
+  width: 80px;
+  font-size: 1.1em;
+  font-family: "Righteous", cursive;
+}
+
+.partTwo {
+  text-align: right;
+  color: var(--fontColor);
+  font-size: 0.9em;
+  font-family: "Manrope", sans-serif;
+  /* margin: 5px; */
+  padding: 5px 4px 10px 5px;
+  box-sizing: border-box;
+}
+
+.forecast {
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  /* max-width: 1000px; */
+  /* padding: 10px; */
+  flex-wrap: wrap;
+  box-sizing: border-box;
+}
+
+.today {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 500px;
+  margin: auto;
+}
+
+.topSection {
+  display: flex;
+  justify-content: space-around;
+  margin: 15px 2px;
+  padding: 10px 5px;
+  text-align: center;
+  border-radius: 5px;
+  background-color: var(--backgroundTopSection);
+}
+
+.doNotShow {
+  display: none;
+}
+
+:root {
+  --backgroundForecast: #ffa726;
+  --backgroundExtendedLabel: #484848;
+  --backgroundBody: black;
+  --colorExtendedLabel: white;
+  --backgroundTopSection: #484848;
+  --backgroundApp: black;
+  --fontColor: black;
+  --fontBody: Righteous, cursive;
+  --colorBody: #ffffff;
+}
+
+.fadeIn {
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 25px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 20px;
+  width: 20px;
+  left: 7px;
+  bottom: 3px;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: #2196f3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196f3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(18px);
+  -ms-transform: translateX(18px);
+  transform: translateX(18px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 11px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
